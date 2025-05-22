@@ -6,4 +6,9 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 
 ## メモ
-/app/page.tsx、では Tailwindクラスを使用している
+・/app/page.tsx、では Tailwindクラスを使用している  
+
+・.tsxファイルはTtpeScriptに加えてJSXも含むことができる  
+  (.tsファイルはTypeScriptのみ)  
+・.tsxは、React でコンポーネントを作成する際に必須の拡張子  
+・tsx を使うことで、コンポーネントの props に型を付けることができ、意図しないデータの流入を防ぐことができる。

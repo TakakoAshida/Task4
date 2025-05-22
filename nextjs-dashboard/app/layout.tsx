@@ -1,3 +1,6 @@
+// これはルートレイアウトのファイル
+// ルートレイアウトは、アプリケーション全体のレイアウトを定義するために使用される
+
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
  
