@@ -2,6 +2,7 @@
 import Form from '@/app/ui/invoices/edit-form';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchInvoiceById, fetchCustomers } from '@/app/lib/data';
+import { notFound } from 'next/navigation';
  
 export default async function Page(props: { params: Promise<{ id: string }> }) {
     const params = await props.params;
@@ -12,6 +13,11 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
         // 特定の顧客の情報を取得するための関数
         fetchCustomers(),
     ]);
+
+    if (!invoice) {
+      notFound();
+    }
+    
   return (
     <main>
       <Breadcrumbs
